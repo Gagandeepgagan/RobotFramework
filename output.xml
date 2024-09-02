@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-02T17:28:56.499747" rpa="false" schemaversion="5">
+<suite id="s1" name="TestSuite1" source="c:\Users\netzwelt\eclipse\RobotFramework\TestSuite1.robot">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2024-09-02T17:28:56.533638" level="INFO">this is my suite setup.</msg>
+<arg>this is my suite setup.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-02T17:28:56.533638" elapsed="0.000000"/>
+</kw>
+<test id="s1-t1" name="FirstTestCase" line="12">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2024-09-02T17:28:56.534655" level="INFO">hi, Test.</msg>
+<arg>hi, Test.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-02T17:28:56.534655" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-02T17:28:56.534655" level="INFO">Gagan-smoke</msg>
+<arg>Gagan-smoke</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-02T17:28:56.534655" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-02T17:28:56.535634" level="INFO">bye, Test.</msg>
+<arg>bye, Test.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-02T17:28:56.535634" elapsed="0.000000"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" start="2024-09-02T17:28:56.533638" elapsed="0.001996"/>
+</test>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-02T17:28:56.537637" level="INFO">this is my suite teardown.</msg>
+<arg>this is my suite teardown.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-02T17:28:56.537637" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-02T17:28:56.500902" elapsed="0.036735"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestSuite1">TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

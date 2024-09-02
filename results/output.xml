@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-02T17:10:45.567113" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotFramework" source="c:\Users\netzwelt\eclipse\RobotFramework">
+<suite id="s1-s1" name="TestSuite1" source="c:\Users\netzwelt\eclipse\RobotFramework\TestSuite1.robot">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2024-09-02T17:10:45.608299" level="INFO">this is my suite setup.</msg>
+<arg>this is my suite setup.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-02T17:10:45.607301" elapsed="0.000998"/>
+</kw>
+<test id="s1-s1-t1" name="First Test Case" line="12">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2024-09-02T17:10:45.610300" level="INFO">hi, Test.</msg>
+<arg>hi, Test.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-02T17:10:45.610300" elapsed="0.000999"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-02T17:10:45.612812" level="INFO">Gagan</msg>
+<arg>Gagan</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-02T17:10:45.611299" elapsed="0.001513"/>
+</kw>
+<kw name="Remove Tags" owner="BuiltIn">
+<msg time="2024-09-02T17:10:45.614823" level="INFO">Removed tags .</msg>
+<doc>Removes given ``tags`` from the current test or all tests in a suite.</doc>
+<status status="PASS" start="2024-09-02T17:10:45.613823" elapsed="0.001000"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-02T17:10:45.615822" level="INFO">bye, Test.</msg>
+<arg>bye, Test.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-02T17:10:45.615822" elapsed="0.000000"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" start="2024-09-02T17:10:45.609297" elapsed="0.007524"/>
+</test>
+<test id="s1-s1-t2" name="Second Test case" line="17">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2024-09-02T17:10:45.619823" level="INFO">hi, Test.</msg>
+<arg>hi, Test.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-02T17:10:45.619823" elapsed="0.000000"/>
+</kw>
+<kw name="Set Tags" owner="BuiltIn">
+<msg time="2024-09-02T17:10:45.620823" level="INFO">Set tag 'CustomizedTag'.</msg>
+<arg>CustomizedTag</arg>
+<doc>Adds given ``tags`` for the current test or all tests in a suite.</doc>
+<status status="PASS" start="2024-09-02T17:10:45.620823" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-02T17:10:45.621820" level="INFO">Bains</msg>
+<arg>Bains</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-02T17:10:45.621820" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-02T17:10:45.622821" level="INFO">bye, Test.</msg>
+<arg>bye, Test.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-02T17:10:45.622821" elapsed="0.000000"/>
+</kw>
+<tag>CustomizedTag</tag>
+<tag>Functional</tag>
+<status status="PASS" start="2024-09-02T17:10:45.618822" elapsed="0.005000"/>
+</test>
+<test id="s1-s1-t3" name="Third Test case" line="22">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2024-09-02T17:10:45.625821" level="INFO">hi, Test.</msg>
+<arg>hi, Test.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-02T17:10:45.625821" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-02T17:10:45.626823" level="INFO">Deep</msg>
+<arg>Deep</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-02T17:10:45.626823" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-02T17:10:45.627821" level="INFO">bye, Test.</msg>
+<arg>bye, Test.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-02T17:10:45.626823" elapsed="0.000998"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" start="2024-09-02T17:10:45.624822" elapsed="0.002999"/>
+</test>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-02T17:10:45.629822" level="INFO">this is my suite teardown.</msg>
+<arg>this is my suite teardown.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-02T17:10:45.629822" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-09-02T17:10:45.602299" elapsed="0.027523"/>
+</suite>
+<status status="PASS" start="2024-09-02T17:10:45.574294" elapsed="0.057533"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">CustomizedTag</stat>
+<stat pass="1" fail="0" skip="0">Functional</stat>
+<stat pass="1" fail="0" skip="0">sanity</stat>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="RobotFramework">RobotFramework</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="TestSuite1">RobotFramework.TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
