@@ -15,3 +15,4 @@ Valid Login
     Click Button    type:submit
     Title Should Be    Welcome Page
     [Teardown]    Close Browser
+

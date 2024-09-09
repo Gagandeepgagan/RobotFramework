@@ -1,0 +1,27 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.TestCase1                                                              
+==============================================================================
+Login Test                                                              
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\netzwelt\eclipse\RobotFramework\POM\TestCase1.robot:14
+    T:  Login Test    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\netzwelt\eclipse\RobotFramework\POM\TestCase1.robot:19
+      Verify successful login    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\netzwelt\eclipse\RobotFramework\POM\Keywords1.robot:32
+      Page Should Contain    Login Successfully
+______________________________________________________________________________
+| FAIL |
+Page should have contained text 'Login Successfully' but did not.
+------------------------------------------------------------------------------
+Suites.TestCase1                                                      | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\netzwelt\eclipse\RobotFramework\POM\pabot_results\0\output.xml

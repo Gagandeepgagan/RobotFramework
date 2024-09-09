@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-06T17:15:01.332431" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="TestCase1" source="C:\Users\netzwelt\eclipse\RobotFramework\POM\TestCase1.robot">
+<kw name="Open my chrome browser" owner="Keywords1" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-06T17:14:18.786899" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/index.php'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-06T17:14:18.786899" elapsed="6.486039"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-06T17:14:27.274027" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-06T17:14:25.273938" elapsed="2.000089"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-06T17:14:27.274027" elapsed="0.082308"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2024-09-06T17:14:27.356335" elapsed="0.035737"/>
+</kw>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2024-09-06T17:14:27.392072" elapsed="0.970092"/>
+</kw>
+<status status="PASS" start="2024-09-06T17:14:18.786899" elapsed="9.575265"/>
+</kw>
+<test id="s1-s1-t1" name="Login Test" line="14">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-09-06T17:14:28.363162" elapsed="0.002001"/>
+</kw>
+<kw name="Enter username" owner="Keywords1">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-06T17:14:28.367198" level="INFO">Typing text 'tourist' into text field 'name:userName'.</msg>
+<arg>${txt_loginUserNAme}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T17:14:28.366160" elapsed="0.135258"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2024-09-06T17:14:28.366160" elapsed="0.135258"/>
+</kw>
+<kw name="Enter Password" owner="Keywords1">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-06T17:14:28.503405" level="INFO">Typing text 'tourist' into text field 'name:password'.</msg>
+<arg>${txt_loginUPAssword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T17:14:28.502404" elapsed="0.166502"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2024-09-06T17:14:28.502404" elapsed="0.166502"/>
+</kw>
+<kw name="Click on submit button" owner="Keywords1">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-06T17:14:28.669906" level="INFO">Clicking button 'name:submit'.</msg>
+<arg>${btn_signin}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T17:14:28.669906" elapsed="0.933240"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-06T17:14:34.604740" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-06T17:14:29.603146" elapsed="5.001594"/>
+</kw>
+<status status="PASS" start="2024-09-06T17:14:28.668906" elapsed="5.936163"/>
+</kw>
+<kw name="Verify successful login" owner="Keywords1">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-06T17:14:54.799927" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="0-selenium-screenshot-1.png"&gt;&lt;img src="0-selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-06T17:14:54.799927" level="FAIL">Page should have contained text 'Login Successfully' but did not.</msg>
+<arg>Login Successfully</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-09-06T17:14:34.605577" elapsed="20.200856">Page should have contained text 'Login Successfully' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-09-06T17:14:34.605069" elapsed="20.201364">Page should have contained text 'Login Successfully' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-09-06T17:14:28.362164" elapsed="26.444269">Page should have contained text 'Login Successfully' but did not.</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-06T17:14:54.806433" elapsed="2.176903"/>
+</kw>
+<status status="FAIL" start="2024-09-06T17:14:18.616000" elapsed="38.367165"/>
+</suite>
+<suite id="s1-s2" name="TestCase2" source="C:\Users\netzwelt\eclipse\RobotFramework\POM\TestCase2.robot">
+<kw name="Open my chrome browser" owner="Keywords2" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-06T17:14:18.786899" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/register.php'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-06T17:14:18.786899" elapsed="6.463296"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-06T17:14:27.251739" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-06T17:14:25.250195" elapsed="2.001544"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-06T17:14:27.251739" elapsed="0.064876"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2024-09-06T17:14:27.316615" elapsed="0.037447"/>
+</kw>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2024-09-06T17:14:27.354062" elapsed="1.057390"/>
+</kw>
+<status status="PASS" start="2024-09-06T17:14:18.786899" elapsed="9.624553"/>
+</kw>
+<test id="s1-s2-t1" name="Registeration Test" line="14">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-09-06T17:14:28.411452" elapsed="0.001001"/>
+</kw>
+<kw name="Enter FirstName" owner="Keywords2">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-06T17:14:28.413483" level="INFO">Typing text 'Gagan' into text field 'name:firstName'.</msg>
+<arg>${txt_regFirstName}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T17:14:28.412453" elapsed="0.123481"/>
+</kw>
+<arg>${name1}</arg>
+<status status="PASS" start="2024-09-06T17:14:28.412453" elapsed="0.124480"/>
+</kw>
+<kw name="Enter Lastname" owner="Keywords2">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-06T17:14:28.537933" level="INFO">Typing text 'Bains' into text field 'name:lastName'.</msg>
+<arg>${txt_regLastName}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T17:14:28.536933" elapsed="0.096639"/>
+</kw>
+<arg>${name2}</arg>
+<status status="PASS" start="2024-09-06T17:14:28.536933" elapsed="0.096639"/>
+</kw>
+<kw name="Click on submit button" owner="Keywords2">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-06T17:14:28.634574" level="INFO">Clicking button 'name:submit'.</msg>
+<arg>${btn_submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-06T17:14:28.634574" elapsed="1.178629"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-06T17:14:34.813445" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-06T17:14:29.813203" elapsed="5.000242"/>
+</kw>
+<status status="PASS" start="2024-09-06T17:14:28.634574" elapsed="6.178871"/>
+</kw>
+<kw name="Verify successful Registeration" owner="Keywords2">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-06T17:14:34.816967" level="INFO">Current page contains text 'Thank you for registering.'.</msg>
+<arg>Thank you for registering.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-06T17:14:34.813445" elapsed="0.003522"/>
+</kw>
+<status status="PASS" start="2024-09-06T17:14:34.813445" elapsed="0.003522"/>
+</kw>
+<status status="PASS" start="2024-09-06T17:14:28.411452" elapsed="6.405515"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-06T17:14:34.816967" elapsed="2.148598"/>
+</kw>
+<status status="PASS" start="2024-09-06T17:14:18.617171" elapsed="18.348394"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 2 executions.</doc>
+<status status="FAIL" start="2024-09-06T17:14:18.602000" elapsed="38.384089"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCase1">Suites.TestCase1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="TestCase2">Suites.TestCase2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

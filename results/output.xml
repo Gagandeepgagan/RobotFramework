@@ -1,73 +1,95 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-05T15:52:20.917538" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-09T11:45:47.720833" rpa="false" schemaversion="5">
 <suite id="s1" name="RobotFramework" source="c:\Users\netzwelt\eclipse\RobotFramework">
-<suite id="s1-s1" name="ScrollingPAge" source="c:\Users\netzwelt\eclipse\RobotFramework\ScrollingPAge.robot">
-<test id="s1-s1-t1" name="ScrollTest" line="6">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-09-05T15:52:21.098217" level="INFO">Opening browser 'edge' to base url 'https://www.countries-ofthe-world.com/flags-of-the-world.html'.</msg>
-<arg>https://www.countries-ofthe-world.com/flags-of-the-world.html</arg>
-<arg>edge</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-09-05T15:52:21.098217" elapsed="6.563112"/>
+<suite id="s1-s1" name="Robot7Updates" source="c:\Users\netzwelt\eclipse\RobotFramework\Robot7Updates.robot">
+<test id="s1-s1-t1" name="VAR syntax" line="5">
+<variable name="${name}">
+<var>Robot Framework</var>
+<status status="PASS" start="2024-09-09T11:45:47.748464" elapsed="0.000000"/>
+</variable>
+<variable name="${longer}">
+<var>Gagandeep Kaur Bains</var>
+<var>Quality Assursnace</var>
+<status status="PASS" start="2024-09-09T11:45:47.749461" elapsed="0.000000"/>
+</variable>
+<variable name="${multiline}" separator="\n">
+<var>Gagandeep Kaur Bains</var>
+<var>First line</var>
+<var>second line</var>
+<var>third line</var>
+<status status="PASS" start="2024-09-09T11:45:47.749461" elapsed="0.000000"/>
+</variable>
+<variable name="@{list}">
+<var>first</var>
+<var>second</var>
+<var>last</var>
+<status status="PASS" start="2024-09-09T11:45:47.750457" elapsed="0.000000"/>
+</variable>
+<kw name="Log Many" owner="BuiltIn">
+<msg time="2024-09-09T11:45:47.751457" level="INFO">Robot Framework</msg>
+<msg time="2024-09-09T11:45:47.751457" level="INFO">Gagandeep Kaur Bains Quality Assursnace</msg>
+<msg time="2024-09-09T11:45:47.751457" level="INFO">Gagandeep Kaur Bains
+First line
+second line
+third line</msg>
+<msg time="2024-09-09T11:45:47.751457" level="INFO">['first', 'second', 'last']</msg>
+<arg>${name}</arg>
+<arg>${longer}</arg>
+<arg>${multiline}</arg>
+<arg>${list}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<status status="PASS" start="2024-09-09T11:45:47.750457" elapsed="0.001000"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-05T15:52:37.662805" level="INFO">Slept 10 seconds.</msg>
-<arg>10</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-05T15:52:27.662331" elapsed="10.001521"/>
+<variable name="${suite level}" scope="SUITE">
+<var>value</var>
+<status status="PASS" start="2024-09-09T11:45:47.752456" elapsed="0.000000"/>
+</variable>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-09T11:45:47.753458" level="INFO">value</msg>
+<arg>${suite level}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-09T11:45:47.753458" elapsed="0.000000"/>
 </kw>
-<kw name="Set Browser Implicit Wait" owner="SeleniumLibrary">
-<arg>10</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-09-05T15:52:37.666852" elapsed="0.005045"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-09-05T15:52:37.676266" level="INFO">Executing JavaScript:
-window.scrollTo(0, document.body.scrollHeight)
-Without any arguments.</msg>
-<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-09-05T15:52:37.673854" elapsed="0.219232"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-05T15:52:42.894683" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-05T15:52:37.894086" elapsed="5.001806"/>
-</kw>
-<kw name="Execute Javascript" owner="SeleniumLibrary">
-<msg time="2024-09-05T15:52:42.900503" level="INFO">Executing JavaScript:
-window.scrollTo(0,-document.body.scrollHeight)
-Without any arguments.</msg>
-<arg>window.scrollTo(0,-document.body.scrollHeight)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="PASS" start="2024-09-05T15:52:42.898117" elapsed="0.030496"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-09-05T15:52:47.930042" level="INFO">Slept 5 seconds.</msg>
-<arg>5</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-09-05T15:52:42.929646" elapsed="5.000396"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-09-05T15:52:47.930545" elapsed="2.177294"/>
-</kw>
-<status status="PASS" start="2024-09-05T15:52:21.098217" elapsed="29.010618"/>
+<tag>common</tag>
+<tag>tags</tag>
+<status status="PASS" start="2024-09-09T11:45:47.747464" elapsed="0.006993"/>
 </test>
-<status status="PASS" start="2024-09-05T15:52:20.930541" elapsed="29.180134"/>
+<test id="s1-s1-t2" name="VAR continued" line="22">
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-09-09T11:45:47.757591" level="INFO">value</msg>
+<arg>${suite level}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-09T11:45:47.756458" elapsed="0.001133"/>
+</kw>
+<tag>common</tag>
+<tag>tags</tag>
+<status status="PASS" start="2024-09-09T11:45:47.755463" elapsed="0.002128"/>
+</test>
+<test id="s1-s1-t3" name="tag syntax" line="25">
+<kw name="No Operation" owner="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="PASS" start="2024-09-09T11:45:47.760593" elapsed="0.000000"/>
+</kw>
+<tag>own</tag>
+<tag>tags</tag>
+<status status="PASS" start="2024-09-09T11:45:47.759591" elapsed="0.002003"/>
+</test>
+<status status="PASS" start="2024-09-09T11:45:47.744402" elapsed="0.018192"/>
 </suite>
-<status status="PASS" start="2024-09-05T15:52:20.917538" elapsed="29.195646"/>
+<status status="PASS" start="2024-09-09T11:45:47.724833" elapsed="0.039758"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="2" fail="0" skip="0">common</stat>
+<stat pass="1" fail="0" skip="0">own</stat>
+<stat pass="3" fail="0" skip="0">tags</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="RobotFramework">RobotFramework</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="ScrollingPAge">RobotFramework.ScrollingPAge</stat>
+<stat pass="3" fail="0" skip="0" id="s1" name="RobotFramework">RobotFramework</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Robot7Updates">RobotFramework.Robot7Updates</stat>
 </suite>
 </statistics>
 <errors>

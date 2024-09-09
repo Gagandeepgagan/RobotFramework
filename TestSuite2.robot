@@ -27,7 +27,7 @@ Search Topic
 First Test Case
     Open Browser    ${URL}    ${BROWSER}
     Set Browser Implicit Wait    1
-  Search Topic    pcloudy 
+    Search Topic    pcloudy
     [Teardown]    Close Browser
 
 Second Test case
