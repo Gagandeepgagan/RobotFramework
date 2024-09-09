@@ -1,0 +1,151 @@
+{"level":30,"time":"2024-09-09T07:13:53.677Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Listening on 59942"}
+(node:23628) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-09-09T07:13:53.842Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-09T07:13:53.843Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-09T07:13:53.847Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-09T07:13:53.847Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-09T07:13:53.853Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-09-09T07:13:54.130Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Adding browser to stack: chromium, version: 128.0.6613.18"}
+{"level":30,"time":"2024-09-09T07:13:54.131Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-09-09T07:13:54.131Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-09-09T07:13:54.137Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method newContext"}
+{"level":30,"time":"2024-09-09T07:13:54.138Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-09-09T07:13:54.138Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Trace file: "}
+{"level":30,"time":"2024-09-09T07:13:54.164Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Changed active context"}
+{"level":30,"time":"2024-09-09T07:13:54.165Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method newContext"}
+{"level":30,"time":"2024-09-09T07:13:54.174Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-09-09T07:13:54.175Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-09-09T07:13:54.461Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Video path: undefined"}
+{"level":30,"time":"2024-09-09T07:13:54.462Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Changed active page"}
+{"level":30,"time":"2024-09-09T07:13:54.490Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method newPage"}
+{"level":30,"time":"2024-09-09T07:13:54.498Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-09-09T07:13:54.556Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Adding browser to stack: webkit, version: 18.0"}
+{"level":30,"time":"2024-09-09T07:13:54.556Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-09-09T07:13:54.556Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-09-09T07:13:54.562Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-09-09T07:13:54.562Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-09-09T07:13:54.582Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Changed active context"}
+{"level":30,"time":"2024-09-09T07:13:54.753Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Video path: undefined"}
+{"level":30,"time":"2024-09-09T07:13:54.753Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Changed active page"}
+{"level":30,"time":"2024-09-09T07:13:57.895Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method newPage"}
+{"level":30,"time":"2024-09-09T07:13:57.900Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-09-09T07:13:57.901Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Strict mode is enabled, find Locator with [name=\"q\"] in page."}
+{"level":30,"time":"2024-09-09T07:13:58.139Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method typeText"}
+{"level":30,"time":"2024-09-09T07:13:58.145Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method press"}
+{"level":30,"time":"2024-09-09T07:13:58.145Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Strict mode is enabled, find Locator with [name=\"q\"] in page."}
+{"level":30,"time":"2024-09-09T07:14:08.151Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Error of node method  press"}
+================= Original suppressed error =================
+locator.press: Timeout 10000ms exceeded.
+Call log:
+  [2m- waiting for locator('[name="q"]')[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" autocapitalize="off" aria-expanded="false" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" autocapitalize="off" aria-expanded="false" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+[2m  -   locator resolved to <textarea value="" name="q" rows="1" id="APjFqb" autofocus="" class="gLFyf" title="Search" role="combobox" maxlength="2048" autocorrect="off" aria-owns="Alh6id" autocomplete="off" spellcheck="false" aria-label="Search" aria-expanded="true" autocapitalize="off" aria-haspopup="false" aria-controls="Alh6id" jsaction="paste:puy29d;" aria-autocomplete="both" aria-activedescendant="" data-ved="0ahUKEwiZ9J7Fp7WIAxWcZWwGHQF8DN4Q39UDCAY"></textarea>[22m
+[2m  - elementHandle.press("\13")[22m
+
+    at press (c:\Users\netzwelt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:10322:19)
+    at async PlaywrightServer.press (c:\Users\netzwelt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11377:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2024-09-09T07:14:08.190Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2024-09-09T07:14:08.190Z","pid":23628,"hostname":"NW-Gagandeep-LPT","Take screenshot with options: ":{"path":"C:\\Users\\netzwelt\\eclipse\\RobotFrameworkPW\\results\\browser\\screenshot\\fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2024-09-09T07:14:08.270Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2024-09-09T07:14:12.661Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Removed page=82e1564a-600d-4288-880d-9044d030e8be from context=08824c28-e598-41aa-916c-fbf19fac6aa4 page stack"}
+{"level":30,"time":"2024-09-09T07:14:15.816Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-09T07:14:15.819Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-09T07:14:15.821Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-09-09T07:14:15.822Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-09-09T07:14:15.826Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-09-09T07:14:15.827Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-09-09T07:14:15.830Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Changing current active page: page=c0e5bad6-5c45-4d6d-8855-506dd2f4ffa7"}
+{"level":30,"time":"2024-09-09T07:14:15.830Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Changed active page"}
+{"level":30,"time":"2024-09-09T07:14:15.834Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-09T07:14:15.836Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-09T07:14:15.838Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Changed active context"}
+{"level":30,"time":"2024-09-09T07:14:15.838Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Changing current active page: page=c0e5bad6-5c45-4d6d-8855-506dd2f4ffa7"}
+{"level":30,"time":"2024-09-09T07:14:15.838Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Changed active page"}
+{"level":30,"time":"2024-09-09T07:14:15.841Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method closePage"}
+{"level":30,"time":"2024-09-09T07:14:15.841Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Closing page with runBeforeUnload false"}
+{"level":30,"time":"2024-09-09T07:14:15.847Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method closePage"}
+{"level":30,"time":"2024-09-09T07:14:15.850Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-09T07:14:15.850Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-09T07:14:15.852Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-09T07:14:15.852Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: No context for id context=08824c28-e598-41aa-916c-fbf19fac6aa4. Open contexts: context=ec805271-2c8a-418d-ae5e-98bf615cead8
+    at _switchContext (c:\Users\netzwelt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11217:11)
+    at switchContext (c:\Users\netzwelt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11265:11)
+    at PlaywrightServer.switchContext (c:\Users\netzwelt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11559:30)
+    at Object.onReceiveHalfClose (c:\Users\netzwelt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (c:\Users\netzwelt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (c:\Users\netzwelt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (c:\Users\netzwelt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-09-09T07:14:15.892Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-09T07:14:15.892Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-09T07:14:15.894Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-09T07:14:15.894Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: No context for id context=08824c28-e598-41aa-916c-fbf19fac6aa4. Open contexts: context=ec805271-2c8a-418d-ae5e-98bf615cead8
+    at _switchContext (c:\Users\netzwelt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11217:11)
+    at switchContext (c:\Users\netzwelt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11265:11)
+    at PlaywrightServer.switchContext (c:\Users\netzwelt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:11559:30)
+    at Object.onReceiveHalfClose (c:\Users\netzwelt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1425:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (c:\Users\netzwelt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:569:31)
+    at BaseServerInterceptingCall.handleEndEvent (c:\Users\netzwelt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:609:14)
+    at ServerHttp2Stream.<anonymous> (c:\Users\netzwelt\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:376:18)
+    at ServerHttp2Stream.emit (node:events:531:35)
+    at endReadableNT (node:internal/streams/readable:1696:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+=============================================================
+{"level":30,"time":"2024-09-09T07:14:20.998Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-09-09T07:14:21.148Z","pid":23628,"hostname":"NW-Gagandeep-LPT","msg":"End of node method closeAllBrowsers"}

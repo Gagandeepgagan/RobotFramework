@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-09T12:50:56.957994" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotFrameworkPW" source="c:\Users\netzwelt\eclipse\RobotFrameworkPW">
+<suite id="s1-s1" name="TestSuite1" source="c:\Users\netzwelt\eclipse\RobotFrameworkPW\TestSuite1.robot">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2024-09-09T12:50:57.739214" level="INFO">this is my suite setup.</msg>
+<arg>this is my suite setup.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-09T12:50:57.739214" elapsed="0.000000"/>
+</kw>
+<test id="s1-s1-t1" name="First Test Case" line="31">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2024-09-09T12:50:57.749531" level="INFO">hi, Test.</msg>
+<arg>hi, Test.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-09T12:50:57.749531" elapsed="0.000000"/>
+</kw>
+<kw name="New Browser" owner="Browser">
+<msg time="2024-09-09T12:50:57.749531" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\netzwelt\\eclipse\\RobotFrameworkPW\\results\\browser\\traces\\efee9582-38b2-49a4-978d-abe38bb068b1"}</msg>
+<msg time="2024-09-09T12:50:58.007103" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\netzwelt\\eclipse\\RobotFrameworkPW\\results\\browser\\traces\\efee9582-38b2-49a4-978d-abe38bb068b1"}</msg>
+<arg>${BROWSER}</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-09-09T12:50:57.749531" elapsed="0.257572"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2024-09-09T12:50:58.007103" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2024-09-09T12:50:58.039698" level="INFO">Successfully created context. </msg>
+<msg time="2024-09-09T12:50:58.039698" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2024-09-09T12:50:58.007103" elapsed="0.032595"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-09-09T12:51:00.708214" level="INFO">Successfully initialized new page object and opened url: http://www.google.com</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-09-09T12:50:58.039698" elapsed="2.668516"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<msg time="2024-09-09T12:51:00.715460" level="INFO">Set timeout to: 10000000</msg>
+<arg>10000</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2024-09-09T12:51:00.709218" elapsed="0.006242"/>
+</kw>
+<kw name="Search Topic">
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-09-09T12:51:00.717462" level="INFO">Fills the text 'pcloudy' in the given field.</msg>
+<arg>[name="q"]</arg>
+<arg>${topic}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-09-09T12:51:00.717462" elapsed="0.047056"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>[name="q"]</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-09T12:51:00.764518" elapsed="0.539711"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<msg time="2024-09-09T12:51:01.308230" level="INFO">Set timeout to: 2000000</msg>
+<arg>2000</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2024-09-09T12:51:01.305229" elapsed="0.004000"/>
+</kw>
+<arg>pcloudy</arg>
+<status status="PASS" start="2024-09-09T12:51:00.716459" elapsed="0.592770"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-09T12:51:01.310230" level="INFO">bye, Test.</msg>
+<arg>bye, Test.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-09T12:51:01.310230" elapsed="0.001001"/>
+</kw>
+<tag>Functional</tag>
+<status status="PASS" start="2024-09-09T12:50:57.739214" elapsed="3.573015"/>
+</test>
+<test id="s1-s1-t2" name="Second Test case" line="38">
+<kw name="Log" owner="BuiltIn" type="SETUP">
+<msg time="2024-09-09T12:51:01.551798" level="INFO">hi, Test.</msg>
+<arg>hi, Test.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-09T12:51:01.550955" elapsed="0.001500"/>
+</kw>
+<kw name="Open The Browser">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-09-09T12:51:01.556396" level="INFO">{"browser": "webkit", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "c:\\Users\\netzwelt\\eclipse\\RobotFrameworkPW\\results\\browser\\traces\\c70a26ab-7906-4fdd-9641-e5a6f702206c"}</msg>
+<msg time="2024-09-09T12:51:01.617148" level="INFO">Successfully created browser with options: {"browser":"webkit","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"c:\\Users\\netzwelt\\eclipse\\RobotFrameworkPW\\results\\browser\\traces\\c70a26ab-7906-4fdd-9641-e5a6f702206c"}</msg>
+<arg>${BROWSER2}</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-09-09T12:51:01.553973" elapsed="0.063175"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2024-09-09T12:51:01.624913" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  }
+}</msg>
+<msg time="2024-09-09T12:51:01.644941" level="INFO">Successfully created context. </msg>
+<msg time="2024-09-09T12:51:01.644941" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2024-09-09T12:51:01.617148" elapsed="0.027793"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-09-09T12:51:04.845029" level="INFO">Successfully initialized new page object and opened url: http://www.google.com</msg>
+<arg>${URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-09-09T12:51:01.644941" elapsed="3.200088"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<msg time="2024-09-09T12:51:04.848057" level="INFO">Set timeout to: 10000000</msg>
+<arg>10000</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2024-09-09T12:51:04.845029" elapsed="0.004018"/>
+</kw>
+<status status="PASS" start="2024-09-09T12:51:01.553431" elapsed="3.295616"/>
+</kw>
+<kw name="Search Topic">
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-09-09T12:51:04.850027" level="INFO">Fills the text 'BrowserStack' in the given field.</msg>
+<arg>[name="q"]</arg>
+<arg>${topic}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-09-09T12:51:04.850027" elapsed="0.045542"/>
+</kw>
+<kw name="Press Keys" owner="Browser">
+<arg>[name="q"]</arg>
+<arg>Enter</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given key combination into element found by ``selector``.</doc>
+<status status="PASS" start="2024-09-09T12:51:04.896600" elapsed="0.191137"/>
+</kw>
+<kw name="Set Browser Timeout" owner="Browser">
+<msg time="2024-09-09T12:51:05.090737" level="INFO">Set timeout to: 2000000</msg>
+<arg>2000</arg>
+<tag>Config</tag>
+<tag>Setter</tag>
+<doc>Sets the timeout used by most input and getter keywords.</doc>
+<status status="PASS" start="2024-09-09T12:51:05.088736" elapsed="0.002995"/>
+</kw>
+<arg>BrowserStack</arg>
+<status status="PASS" start="2024-09-09T12:51:04.849047" elapsed="0.242684"/>
+</kw>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-09T12:51:05.092737" level="INFO">bye, Test.</msg>
+<arg>bye, Test.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-09T12:51:05.091731" elapsed="0.001006"/>
+</kw>
+<tag>Functional</tag>
+<status status="PASS" start="2024-09-09T12:51:01.544660" elapsed="3.548077"/>
+</test>
+<kw name="Log" owner="BuiltIn" type="TEARDOWN">
+<msg time="2024-09-09T12:51:05.164919" level="INFO">this is my suite teardown.</msg>
+<arg>this is my suite teardown.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-09-09T12:51:05.163918" elapsed="0.002009"/>
+</kw>
+<status status="PASS" start="2024-09-09T12:50:56.988267" elapsed="8.177660"/>
+</suite>
+<status status="PASS" start="2024-09-09T12:50:56.957994" elapsed="8.218382"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">Functional</stat>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="RobotFrameworkPW">RobotFrameworkPW</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="TestSuite1">RobotFrameworkPW.TestSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
