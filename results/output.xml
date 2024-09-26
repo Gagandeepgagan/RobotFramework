@@ -1,95 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-09T11:45:47.720833" rpa="false" schemaversion="5">
-<suite id="s1" name="RobotFramework" source="c:\Users\netzwelt\eclipse\RobotFramework">
-<suite id="s1-s1" name="Robot7Updates" source="c:\Users\netzwelt\eclipse\RobotFramework\Robot7Updates.robot">
-<test id="s1-s1-t1" name="VAR syntax" line="5">
-<variable name="${name}">
-<var>Robot Framework</var>
-<status status="PASS" start="2024-09-09T11:45:47.748464" elapsed="0.000000"/>
-</variable>
-<variable name="${longer}">
-<var>Gagandeep Kaur Bains</var>
-<var>Quality Assursnace</var>
-<status status="PASS" start="2024-09-09T11:45:47.749461" elapsed="0.000000"/>
-</variable>
-<variable name="${multiline}" separator="\n">
-<var>Gagandeep Kaur Bains</var>
-<var>First line</var>
-<var>second line</var>
-<var>third line</var>
-<status status="PASS" start="2024-09-09T11:45:47.749461" elapsed="0.000000"/>
-</variable>
-<variable name="@{list}">
-<var>first</var>
-<var>second</var>
-<var>last</var>
-<status status="PASS" start="2024-09-09T11:45:47.750457" elapsed="0.000000"/>
-</variable>
-<kw name="Log Many" owner="BuiltIn">
-<msg time="2024-09-09T11:45:47.751457" level="INFO">Robot Framework</msg>
-<msg time="2024-09-09T11:45:47.751457" level="INFO">Gagandeep Kaur Bains Quality Assursnace</msg>
-<msg time="2024-09-09T11:45:47.751457" level="INFO">Gagandeep Kaur Bains
-First line
-second line
-third line</msg>
-<msg time="2024-09-09T11:45:47.751457" level="INFO">['first', 'second', 'last']</msg>
-<arg>${name}</arg>
-<arg>${longer}</arg>
-<arg>${multiline}</arg>
-<arg>${list}</arg>
-<doc>Logs the given messages as separate entries using the INFO level.</doc>
-<status status="PASS" start="2024-09-09T11:45:47.750457" elapsed="0.001000"/>
+<robot generator="Robot 7.1 (Python 3.12.5 on win32)" generated="2024-09-24T13:50:28.235716" rpa="false" schemaversion="5">
+<suite id="s1" name="POM" source="C:\Users\netzwelt\eclipse\RobotFramework\POM">
+<suite id="s1-s1" name="TestCase1" source="C:\Users\netzwelt\eclipse\RobotFramework\POM\TestCase1.robot">
+<kw name="Open my chrome browser" owner="Keywords1" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-24T13:50:28.403795" level="INFO">Opening browser 'headlesschrome' to base url 'https://demo.guru99.com/test/newtours/index.php'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-24T13:50:28.403795" elapsed="13.954532"/>
 </kw>
-<variable name="${suite level}" scope="SUITE">
-<var>value</var>
-<status status="PASS" start="2024-09-09T11:45:47.752456" elapsed="0.000000"/>
-</variable>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-09-09T11:45:47.753458" level="INFO">value</msg>
-<arg>${suite level}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-09-09T11:45:47.753458" elapsed="0.000000"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T13:50:44.358786" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T13:50:42.358327" elapsed="2.000459"/>
 </kw>
-<tag>common</tag>
-<tag>tags</tag>
-<status status="PASS" start="2024-09-09T11:45:47.747464" elapsed="0.006993"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-24T13:50:44.358786" elapsed="0.031999"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2024-09-24T13:50:44.390785" elapsed="0.011824"/>
+</kw>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2024-09-24T13:50:44.402609" elapsed="1.763473"/>
+</kw>
+<status status="PASS" start="2024-09-24T13:50:28.403795" elapsed="17.762287"/>
+</kw>
+<test id="s1-s1-t1" name="Login Test" line="14">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-09-24T13:50:46.166082" elapsed="0.000000"/>
+</kw>
+<kw name="Enter username" owner="Keywords1">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T13:50:46.166082" level="INFO">Typing text 'tourist' into text field 'name:userName'.</msg>
+<arg>${txt_loginUserNAme}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T13:50:46.166082" elapsed="0.103276"/>
+</kw>
+<arg>${user}</arg>
+<status status="PASS" start="2024-09-24T13:50:46.166082" elapsed="0.103276"/>
+</kw>
+<kw name="Enter Password" owner="Keywords1">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T13:50:46.270357" level="INFO">Typing text 'tourist' into text field 'name:password'.</msg>
+<arg>${txt_loginUPAssword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T13:50:46.270357" elapsed="0.076729"/>
+</kw>
+<arg>${pass}</arg>
+<status status="PASS" start="2024-09-24T13:50:46.269358" elapsed="0.077728"/>
+</kw>
+<kw name="Click on submit button" owner="Keywords1">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-24T13:50:46.347086" level="INFO">Clicking button 'name:submit'.</msg>
+<arg>${btn_signin}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T13:50:46.347086" elapsed="0.917311"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T13:50:52.264547" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T13:50:47.264397" elapsed="5.000150"/>
+</kw>
+<status status="PASS" start="2024-09-24T13:50:46.347086" elapsed="5.917461"/>
+</kw>
+<kw name="Verify successful login" owner="Keywords1">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-24T13:51:12.579972" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-24T13:51:12.579972" level="FAIL">Page should have contained text 'Login Successfully' but did not.</msg>
+<arg>Login Successfully</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="FAIL" start="2024-09-24T13:50:52.264547" elapsed="20.315425">Page should have contained text 'Login Successfully' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-09-24T13:50:52.264547" elapsed="20.315425">Page should have contained text 'Login Successfully' but did not.</status>
+</kw>
+<status status="FAIL" start="2024-09-24T13:50:46.166082" elapsed="26.413890">Page should have contained text 'Login Successfully' but did not.</status>
 </test>
-<test id="s1-s1-t2" name="VAR continued" line="22">
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-09-09T11:45:47.757591" level="INFO">value</msg>
-<arg>${suite level}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-09-09T11:45:47.756458" elapsed="0.001133"/>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-24T13:51:12.595604" elapsed="2.138789"/>
 </kw>
-<tag>common</tag>
-<tag>tags</tag>
-<status status="PASS" start="2024-09-09T11:45:47.755463" elapsed="0.002128"/>
-</test>
-<test id="s1-s1-t3" name="tag syntax" line="25">
-<kw name="No Operation" owner="BuiltIn">
-<doc>Does absolutely nothing.</doc>
-<status status="PASS" start="2024-09-09T11:45:47.760593" elapsed="0.000000"/>
-</kw>
-<tag>own</tag>
-<tag>tags</tag>
-<status status="PASS" start="2024-09-09T11:45:47.759591" elapsed="0.002003"/>
-</test>
-<status status="PASS" start="2024-09-09T11:45:47.744402" elapsed="0.018192"/>
+<status status="FAIL" start="2024-09-24T13:50:28.263701" elapsed="46.470692"/>
 </suite>
-<status status="PASS" start="2024-09-09T11:45:47.724833" elapsed="0.039758"/>
+<suite id="s1-s2" name="TestCase2" source="C:\Users\netzwelt\eclipse\RobotFramework\POM\TestCase2.robot">
+<kw name="Open my chrome browser" owner="Keywords2" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-24T13:51:14.734393" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/register.php'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-24T13:51:14.734393" elapsed="6.957531"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T13:51:23.692682" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T13:51:21.691924" elapsed="2.000758"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-24T13:51:23.692682" elapsed="0.048275"/>
+</kw>
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2024-09-24T13:51:23.740957" elapsed="0.038681"/>
+</kw>
+<kw name="Reload Page" owner="SeleniumLibrary">
+<doc>Simulates user reloading page.</doc>
+<status status="PASS" start="2024-09-24T13:51:23.779638" elapsed="0.985337"/>
+</kw>
+<status status="PASS" start="2024-09-24T13:51:14.734393" elapsed="10.031589"/>
+</kw>
+<test id="s1-s2-t1" name="Registeration Test" line="14">
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-09-24T13:51:24.766937" elapsed="0.001998"/>
+</kw>
+<kw name="Enter FirstName" owner="Keywords2">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T13:51:24.769979" level="INFO">Typing text 'Gagan' into text field 'name:firstName'.</msg>
+<arg>${txt_regFirstName}</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T13:51:24.769979" elapsed="0.126160"/>
+</kw>
+<arg>${name1}</arg>
+<status status="PASS" start="2024-09-24T13:51:24.768935" elapsed="0.127204"/>
+</kw>
+<kw name="Enter Lastname" owner="Keywords2">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-24T13:51:24.896139" level="INFO">Typing text 'Bains' into text field 'name:lastName'.</msg>
+<arg>${txt_regLastName}</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T13:51:24.896139" elapsed="0.115777"/>
+</kw>
+<arg>${name2}</arg>
+<status status="PASS" start="2024-09-24T13:51:24.896139" elapsed="0.115777"/>
+</kw>
+<kw name="Click on submit button" owner="Keywords2">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-24T13:51:25.012916" level="INFO">Clicking button 'name:submit'.</msg>
+<arg>${btn_submit}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-24T13:51:25.012916" elapsed="1.172890"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-24T13:51:31.187143" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-24T13:51:26.186818" elapsed="5.000325"/>
+</kw>
+<status status="PASS" start="2024-09-24T13:51:25.012916" elapsed="6.174227"/>
+</kw>
+<kw name="Verify successful Registeration" owner="Keywords2">
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-09-24T13:51:31.225401" level="INFO">Current page contains text 'Thank you for registering.'.</msg>
+<arg>Thank you for registering.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-09-24T13:51:31.189754" elapsed="0.035647"/>
+</kw>
+<status status="PASS" start="2024-09-24T13:51:31.187143" elapsed="0.038258"/>
+</kw>
+<status status="PASS" start="2024-09-24T13:51:24.765982" elapsed="6.460417"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-24T13:51:31.227399" elapsed="2.154221"/>
+</kw>
+<status status="PASS" start="2024-09-24T13:51:14.734393" elapsed="18.647227"/>
+</suite>
+<status status="FAIL" start="2024-09-24T13:50:28.236686" elapsed="65.144934"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="2" fail="0" skip="0">common</stat>
-<stat pass="1" fail="0" skip="0">own</stat>
-<stat pass="3" fail="0" skip="0">tags</stat>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="RobotFramework">RobotFramework</stat>
-<stat pass="3" fail="0" skip="0" id="s1-s1" name="Robot7Updates">RobotFramework.Robot7Updates</stat>
+<stat pass="1" fail="1" skip="0" id="s1" name="POM">POM</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCase1">POM.TestCase1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="TestCase2">POM.TestCase2</stat>
 </suite>
 </statistics>
 <errors>

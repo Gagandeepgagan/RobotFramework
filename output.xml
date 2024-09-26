@@ -1,70 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.5 on win32)" generated="2024-09-09T11:56:02.713176" rpa="false" schemaversion="5">
-<suite id="s1" name="Robot7Updates" source="C:\Users\netzwelt\eclipse\RobotFramework\Robot7Updates.robot">
-<test id="s1-t1" name="VAR syntax" line="6">
-<variable name="${name}">
-<var>Robot Framework</var>
-<status status="PASS" start="2024-09-09T11:56:02.744315" elapsed="0.000000"/>
-</variable>
-<variable name="${longer}">
-<var>Gagandeep Kaur Bains</var>
-<var>Quality Assursnace</var>
-<status status="PASS" start="2024-09-09T11:56:02.744315" elapsed="0.000000"/>
-</variable>
-<variable name="${multiline}" separator="\n">
-<var>Gagandeep Kaur Bains</var>
-<var>First line</var>
-<var>second line</var>
-<var>third line</var>
-<status status="PASS" start="2024-09-09T11:56:02.744315" elapsed="0.000000"/>
-</variable>
-<variable name="@{list}">
-<var>first</var>
-<var>second</var>
-<var>last</var>
-<status status="PASS" start="2024-09-09T11:56:02.744315" elapsed="0.000000"/>
-</variable>
-<kw name="Log Many" owner="BuiltIn">
-<msg time="2024-09-09T11:56:02.744315" level="INFO">Robot Framework</msg>
-<msg time="2024-09-09T11:56:02.744315" level="INFO">Gagandeep Kaur Bains Quality Assursnace</msg>
-<msg time="2024-09-09T11:56:02.744315" level="INFO">Gagandeep Kaur Bains
-First line
-second line
-third line</msg>
-<msg time="2024-09-09T11:56:02.744315" level="INFO">['first', 'second', 'last']</msg>
-<arg>${name}</arg>
-<arg>${longer}</arg>
-<arg>${multiline}</arg>
-<arg>${list}</arg>
-<doc>Logs the given messages as separate entries using the INFO level.</doc>
-<status status="PASS" start="2024-09-09T11:56:02.744315" elapsed="0.000000"/>
+<robot generator="Robot 7.1 (Python 3.12.5 on win32)" generated="2024-09-25T12:55:44.009028" rpa="false" schemaversion="5">
+<suite id="s1" name="TC1" source="C:\Users\netzwelt\eclipse\RobotFramework\TC1.robot">
+<test id="s1-t1" name="Open Browser" line="18">
+<kw name="Open The Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-25T12:55:44.666612" level="INFO">Opening browser 'chrome' to base url 'http://www.google.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-25T12:55:44.665645" elapsed="13.454298"/>
 </kw>
-<variable name="${suite level}" scope="SUITE">
-<var>value</var>
-<status status="PASS" start="2024-09-09T11:56:02.744315" elapsed="0.000000"/>
-</variable>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-09-09T11:56:02.744315" level="INFO">value</msg>
-<arg>${suite level}</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-09-09T11:56:02.744315" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-25T12:55:44.665645" elapsed="13.454298"/>
 </kw>
-<tag>common</tag>
-<tag>tags</tag>
-<status status="PASS" start="2024-09-09T11:56:02.744315" elapsed="0.000000"/>
+<status status="PASS" start="2024-09-25T12:55:44.664641" elapsed="13.455302"/>
 </test>
-<status status="PASS" start="2024-09-09T11:56:02.713176" elapsed="0.031139"/>
+<test id="s1-t2" name="Search On Google" line="21">
+<kw name="Search Topic">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-25T12:55:58.121979" level="INFO">Typing text 'BrowserStack' into text field 'name:q'.</msg>
+<arg>name:q</arg>
+<arg>${topic}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-25T12:55:58.121979" elapsed="0.180577"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-09-25T12:55:58.303557" level="INFO">Sending key(s) ('\\13',) to name:q element.</msg>
+<msg time="2024-09-25T12:55:58.618519" level="INFO">Sending keys \13</msg>
+<arg>name:q</arg>
+<arg>\\13</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-09-25T12:55:58.303557" elapsed="0.360354"/>
+</kw>
+<arg>BrowserStack</arg>
+<status status="PASS" start="2024-09-25T12:55:58.120974" elapsed="0.542937"/>
+</kw>
+<status status="PASS" start="2024-09-25T12:55:58.120974" elapsed="0.542937"/>
+</test>
+<status status="PASS" start="2024-09-25T12:55:44.011038" elapsed="14.653907"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">common</stat>
-<stat pass="1" fail="0" skip="0">tags</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Robot7Updates">Robot7Updates</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="TC1">TC1</stat>
 </suite>
 </statistics>
 <errors>
