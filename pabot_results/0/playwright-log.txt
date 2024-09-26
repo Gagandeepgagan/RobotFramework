@@ -1,0 +1,62 @@
+{"level":30,"time":"2024-09-18T05:58:28.792Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Listening on 55865"}
+(node:25400) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2024-09-18T05:58:28.959Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:28.960Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:28.963Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:28.963Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:28.967Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2024-09-18T05:58:29.225Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Adding browser to stack: chromium, version: 128.0.6613.18"}
+{"level":30,"time":"2024-09-18T05:58:29.226Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method newBrowser"}
+{"level":30,"time":"2024-09-18T05:58:29.226Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2024-09-18T05:58:29.232Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method newPage"}
+{"level":30,"time":"2024-09-18T05:58:29.233Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2024-09-18T05:58:29.250Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Changed active context"}
+{"level":30,"time":"2024-09-18T05:58:29.506Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Video path: undefined"}
+{"level":30,"time":"2024-09-18T05:58:29.506Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Changed active page"}
+{"level":30,"time":"2024-09-18T05:58:32.848Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method newPage"}
+{"level":30,"time":"2024-09-18T05:58:32.852Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method setViewportSize"}
+{"level":30,"time":"2024-09-18T05:58:32.888Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method setViewportSize"}
+{"level":30,"time":"2024-09-18T05:58:32.891Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method typeText"}
+{"level":30,"time":"2024-09-18T05:58:32.892Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Strict mode is enabled, find Locator with [name=\"q\"] in page."}
+{"level":30,"time":"2024-09-18T05:58:33.227Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method typeText"}
+{"level":30,"time":"2024-09-18T05:58:34.236Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:34.244Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:34.252Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-09-18T05:58:34.254Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-09-18T05:58:34.262Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-09-18T05:58:34.263Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-09-18T05:58:34.267Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Changing current active page: page=003514ec-5479-4af7-9f2b-008220c0712c"}
+{"level":30,"time":"2024-09-18T05:58:34.267Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Changed active page"}
+{"level":30,"time":"2024-09-18T05:58:34.272Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:34.274Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:34.277Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Changed active context"}
+{"level":30,"time":"2024-09-18T05:58:34.277Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Changing current active page: page=003514ec-5479-4af7-9f2b-008220c0712c"}
+{"level":30,"time":"2024-09-18T05:58:34.277Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Changed active page"}
+{"level":30,"time":"2024-09-18T05:58:34.280Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method closePage"}
+{"level":30,"time":"2024-09-18T05:58:34.280Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Closing page with runBeforeUnload false"}
+{"level":30,"time":"2024-09-18T05:58:34.296Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method closePage"}
+{"level":30,"time":"2024-09-18T05:58:34.304Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:34.304Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:34.307Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:34.307Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:34.309Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Changed active context"}
+{"level":30,"time":"2024-09-18T05:58:34.311Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:34.311Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:34.313Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-09-18T05:58:34.314Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-09-18T05:58:34.316Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2024-09-18T05:58:34.316Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2024-09-18T05:58:34.321Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:34.321Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:34.323Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Changed active context"}
+{"level":30,"time":"2024-09-18T05:58:34.324Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method closeContext"}
+{"level":30,"time":"2024-09-18T05:58:34.361Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method closeContext"}
+{"level":30,"time":"2024-09-18T05:58:34.366Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:34.366Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:41.737Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:41.737Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:41.741Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:41.741Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2024-09-18T05:58:41.745Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2024-09-18T05:58:41.862Z","pid":25400,"hostname":"NW-Gagandeep-LPT","msg":"End of node method closeAllBrowsers"}

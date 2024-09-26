@@ -5,7 +5,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 7.0.1 (Python 3.12.5 on win32)" name="Generator">
+<meta content="Robot Framework 7.1 (Python 3.12.5 on win32)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKcAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAqAAAAAAAAAAAAAAAAAAAALIAAAD/AAAA4AAAANwAAADcAAAA3AAAANwAAADcAAAA3AAAANwAAADcAAAA4AAAAP8AAACxAAAAAAAAAKYAAAD/AAAAuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/AAAA/wAAAKkAAAD6AAAAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN8AAAD/AAAA+gAAAMMAAAAAAAAAAgAAAGsAAABrAAAAawAAAGsAAABrAAAAawAAAGsAAABrAAAADAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAIsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAANEAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAAAAAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAFAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAADwAAAB8AAAAAAAAAGAAAABcAAAAAAAAAH8AAABKAAAAAAAAAAAAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAADCAAAA/wAAACkAAADqAAAA4QAAAAAAAAD7AAAA/wAAALAAAAAGAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAIwAAAP4AAAD/AAAA/wAAAGAAAAAAAAAAAAAAAMkAAAD/AAAAigAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAAAAAAAIAAAAcAAAABkAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAA2gAAAP8AAAD7AAAAywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4AAAD/AAAAqwAAAP8AAACvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALIAAAD/AAAAsgAAAAAAAAC5AAAA/wAAAMoAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMkAAAD/AAAAvAAAAAAAAAAAAAAAAAAAAKwAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArQAAAAAAAAAAwAMAAIABAAAf+AAAP/wAAD/8AAAgBAAAP/wAAD/8AAA//AAAJIwAADHEAAA//AAAP/wAAB/4AACAAQAAwAMAAA==">
 <style media="all">
 :root {
@@ -1252,58 +1252,48 @@ window.stats = (function () {
             });
     }
     function calculatePercents(total, passed, failed, skipped) {
-        if (total == 0) {
+        if (total == 0)
             return [0.0, 0.0, 0.0];
-        }
         var pass = 100.0 * passed / total;
         var skip = 100.0 * skipped / total;
         var fail = 100.0 * failed / total;
         if (pass > 0 && pass < 0.1)
-            pass = 0.1
+            pass = 0.1;
         if (fail > 0 && fail < 0.1)
-            fail = 0.1
+            fail = 0.1;
         if (skip > 0 && skip < 0.1)
-            skip = 0.1
+            skip = 0.1;
         if (pass > 99.95 && pass < 100)
-            pass = 99.9
+            pass = 99.9;
         if (fail > 99.95 && fail < 100)
-            fail = 99.9
+            fail = 99.9;
         if (skip > 99.95 && skip < 100)
-            skip = 99.9
-        return [Math.round(pass*10)/10, Math.round(skip*10)/10, Math.round(fail*10)/10];
+            skip = 99.9;
+        return [round1(pass), round1(skip), round1(fail)];
     }
     function calculateWidths(num1, num2, num3) {
         if (num1 + num2 + num3 === 0)
             return [0.0, 0.0, 0.0];
         // Make small percentages better visible
         if (num1 > 0 && num1 < 1)
-            num1 = 1
+            num1 = 1.0;
         if (num2 > 0 && num2 < 1)
-            num2 = 1
+            num2 = 1.0;
         if (num3 > 0 && num3 < 1)
-            num3 = 1
+            num3 = 1.0;
         // Handle situation where some are rounded up
         while (num1 + num2 + num3 > 100) {
-            if (num1 > num2 && num1 > num3)
-                num1 -= 0.1;
-            else if (num2 > num1 && num2 > num3)
-                num2 -= 0.1;
-            else if (num3 > num1 && num3 > num2)
-                num3 -= 0.1;
-            else if (num1 > num3 && num1 == num2) {
-                num1 -= 0.1;
-                num2 -= 0.1;
-            }
-            else if (num1 > num2 && num1 == num3) {
-                num1 -= 0.1;
-                num3 -= 0.1;
-            }
-            else if (num2 > num1 && num2 == num3) {
-                num2 -= 0.1;
-                num3 -= 0.1;
-            }
+            if (num1 >= num2 && num1 >= num3)
+                num1 = round1(num1 - 0.1);
+            else if (num2 >= num1 && num2 >= num3)
+                num2 = round1(num2 - 0.1);
+            else
+                num3 = round1(num3 - 0.1);
         }
-        return [Math.ceil(num1*10)/10, Math.ceil(num2*10)/10, Math.ceil(num3*10)/10];
+        return [num1, num2, num3];
+    }
+    function round1(num) {
+        return Math.round(num*10) / 10;
     }
     return {
         Statistics: Statistics
@@ -2081,25 +2071,25 @@ storage = function () {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[1,0,8218],[[4,5,6,0,[],[1,30,8178],[],[[7,0,0,[8],[1,781,3573],[[1,9,10,0,11,12,0,0,[1,792,0],[[792,2,12]]],[0,13,14,0,15,16,0,17,[1,792,258],[[792,2,18],[1049,2,19]]],[0,20,14,0,21,0,0,17,[1,1049,33],[[1049,2,22],[1082,2,23],[1082,2,24]]],[0,25,14,0,26,27,0,17,[1,1082,2669],[[3750,2,28]]],[0,29,14,0,30,31,0,32,[1,3751,6],[[3757,2,33]]],[0,34,0,0,0,35,0,0,[1,3758,593],[[0,36,14,0,37,38,0,39,[1,3759,47],[[3759,2,40]]],[0,41,14,0,42,43,0,39,[1,3807,540],[]],[0,29,14,0,30,44,0,32,[1,4347,4],[[4350,2,45]]]]],[2,9,10,0,11,46,0,0,[1,4352,1],[[4352,2,46]]]]],[47,0,0,[8],[1,4587,3548],[[1,9,10,0,11,12,0,0,[1,4593,2],[[4594,2,12]]],[0,48,0,0,0,0,0,0,[1,4595,3296],[[0,13,14,0,15,49,0,17,[1,4596,63],[[4598,2,50],[4659,2,51]]],[0,20,14,0,21,0,0,17,[1,4659,28],[[4667,2,22],[4687,2,23],[4687,2,24]]],[0,25,14,0,26,27,0,17,[1,4687,3200],[[7887,2,28]]],[0,29,14,0,30,31,0,32,[1,7887,4],[[7890,2,33]]]]],[0,34,0,0,0,52,0,0,[1,7891,243],[[0,36,14,0,37,38,0,39,[1,7892,46],[[7892,2,53]]],[0,41,14,0,42,43,0,39,[1,7939,191],[]],[0,29,14,0,30,44,0,32,[1,8131,3],[[8133,2,45]]]]],[2,9,10,0,11,46,0,0,[1,8134,1],[[8135,2,46]]]]]],[[1,9,10,0,11,54,0,0,[1,781,0],[[781,2,54]]],[2,9,10,0,11,55,0,0,[1,8206,2],[[8207,2,55]]]],[2,2,0,0]]],[],[],[2,2,0,0]];
+window.output["suite"] = [1,2,3,0,[],[0,0,10947],[[4,5,6,0,[],[0,10,10909],[],[[7,0,0,[],[0,3697,7190,8],[[0,9,10,0,11,12,0,0,[1,3697,7125],[[3697,2,13]]],[0,14,15,0,16,17,0,18,[0,10821,65],[[10821,2,19],[10874,2,20],[10874,2,21],[10874,5,8]]],[0,22,10,0,23,24,0,0,[3,10887,0],[]],[0,25,26,0,27,28,0,0,[3,10887,0],[]],[0,29,10,0,30,0,0,0,[3,10887,0],[]]]]],[],[1,0,1,0]]],[],[],[1,0,1,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*RobotFrameworkPW","*c:\\Users\\netzwelt\\eclipse\\RobotFrameworkPW","*..","*TestSuite1","*c:\\Users\\netzwelt\\eclipse\\RobotFrameworkPW\\TestSuite1.robot","*../TestSuite1.robot","*First Test Case","*Functional","*Log","*BuiltIn","*<p>Logs the given message with the given level.\x3c/p>","*hi, Test.","*New Browser","*Browser","*<p>Create a new playwright Browser with specified options.\x3c/p>","*${BROWSER}    headless=No","*BrowserControl, Setter","eNptkEtvwkAMhP8K2jOpwqM04UxLOVAhHurFl91kUCI2uFpvGtSq/72WUgkq4dt8M7ZsfxsXuBMEMx+Yogrc1G1jhgNTwZYeIsqP1guGV3tnz6Xjy41T4jMy+9twpSGP3Wr5etgojqH9R1dv+zt0/7xdX7F47tasOn1IVca6AbdR9STV6lmwBWRR9+vPiQ56ihCdEb86+EiEwtcfAqItO44vwTboOJw270QB0vqo6b8XEPXjtOkI5I/ZOJlkbpxMcztN8qesTKyDEpfOMjcyP7+0smiN","*Successfully created browser with options: {\"browser\":\"chromium\",\"headless\":false,\"chromiumSandbox\":false,\"devtools\":false,\"handleSIGHUP\":true,\"handleSIGINT\":true,\"handleSIGTERM\":true,\"slowMo\":0,\"timeout\":30000,\"tracesDir\":\"c:\\\\Users\\\\netzwelt\\\\eclipse\\\\RobotFrameworkPW\\\\results\\\\browser\\\\traces\\\\efee9582-38b2-49a4-978d-abe38bb068b1\"}","*New Context","*<p>Create a new BrowserContext with specified options.\x3c/p>","eNpNjsEKgzAQRO9+hXi2YHtp6dUKvRQKCj3HZKNpQzZsolLEf29sCvU4b2Z2dk7SNGOcg/UXnIxGJlx2Tj0NkK9W+7bMubK+ByiZdpFKJA6iRI20pjODBrKvozqDBNemudcVUbT/vScbWc1JWV8Z1moQ2ymUUqtwZ1sgEENYuqFXaOLSzhJIIDD8N+mARsXhgfSC+A7TGqdojgomi+QDnoMOZFLC90HuD6cij6gH1fVr5HgoAlmS5QMi5lUM","*Successfully created context. ","*{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'width': 1280, 'height': 720}}","*New Page","*<p>Open a new Page.\x3c/p>","*${URL}","*Successfully initialized new page object and opened url: <a href=\"http://www.google.com\">http://www.google.com\x3c/a>","*Set Browser Timeout","*<p>Sets the timeout used by most input and getter keywords.\x3c/p>","*10000","*Config, Setter","*Set timeout to: 10000000","*Search Topic","*pcloudy","*Fill Text","*<p>Clears and fills the given <code>txt\x3c/code> into the text field found by <code>selector\x3c/code>.\x3c/p>","*[name=\"q\"]    ${topic}","*PageContent, Setter","*Fills the text 'pcloudy' in the given field.","*Press Keys","*<p>Types the given key combination into element found by <code>selector\x3c/code>.\x3c/p>","*[name=\"q\"]    Enter","*2000","*Set timeout to: 2000000","*bye, Test.","*Second Test case","*Open The Browser","*${BROWSER2}    headless=No","*{\"browser\": \"webkit\", \"headless\": false, \"chromiumSandbox\": false, \"devtools\": false, \"handleSIGHUP\": true, \"handleSIGINT\": true, \"handleSIGTERM\": true, \"slowMo\": 0.0, \"timeout\": 30000.0, \"tracesDir\": \"c:\\\\Users\\\\netzwelt\\\\eclipse\\\\RobotFrameworkPW\\\\results\\\\browser\\\\traces\\\\c70a26ab-7906-4fdd-9641-e5a6f702206c\"}","*Successfully created browser with options: {\"browser\":\"webkit\",\"headless\":false,\"chromiumSandbox\":false,\"devtools\":false,\"handleSIGHUP\":true,\"handleSIGINT\":true,\"handleSIGTERM\":true,\"slowMo\":0,\"timeout\":30000,\"tracesDir\":\"c:\\\\Users\\\\netzwelt\\\\eclipse\\\\RobotFrameworkPW\\\\results\\\\browser\\\\traces\\\\c70a26ab-7906-4fdd-9641-e5a6f702206c\"}","*BrowserStack","*Fills the text 'BrowserStack' in the given field.","*this is my suite setup.","*this is my suite teardown."]);
+window.output["strings"] = window.output["strings"].concat(["*","*RobotFrameworkPW","*C:\\Users\\netzwelt\\eclipse\\RobotFrameworkPW","*..","*mixtureSPW","*C:\\Users\\netzwelt\\eclipse\\RobotFrameworkPW\\mixtureSPW.robot","*../mixtureSPW.robot","*TestCase3-selenium&amp;playwright","*Error: Could not find active page","*Open Browser","*SeleniumLibrary","*<p>Opens a new browser instance to the optional <code>url\x3c/code>.\x3c/p>","*<a href=\"http://www.google.com\">http://www.google.com\x3c/a>    chrome","*Opening browser 'chrome' to base url '<a href=\"http://www.google.com\">http://www.google.com\x3c/a>'.","*Type Text","*Browser","*<p>Types the given <code>txt\x3c/code> into the text field found by <code>selector\x3c/code>.\x3c/p>","*[name=\"q\"]    playwright","*PageContent, Setter","*Types the text 'playwright' in the given field.","*Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:\nError: Tried to take screenshot, but no page was open.","eNqtzDEOglAMANCrNOzSnSCLibPRGOYq/dBYKWlrvnp6L+E7wLswA2kY9ASLc9k3RZQ7RDx0eA32wJXzW1kT+a6yBePZbpZHpydX88dpROd4aQZuSp/qMi+5U5vbfGcz/LXrkQYo5kDTJCm2ksLESaLR/gAGJEpa","*Input Text","*<p>Types the given <code>text\x3c/code> into the text field identified by <code>locator\x3c/code>.\x3c/p>","*name:q    selenium","*Sleep","*BuiltIn","*<p>Pauses the test executed for the given time.\x3c/p>","*2","*Close Browser","*<p>Closes the current browser.\x3c/p>"]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:00:07","fail":0,"label":"All Tests","pass":2,"skip":0}],[{"elapsed":"00:00:07","fail":0,"label":"Functional","pass":2,"skip":0}],[{"elapsed":"00:00:08","fail":0,"id":"s1","label":"RobotFrameworkPW","name":"RobotFrameworkPW","pass":2,"skip":0},{"elapsed":"00:00:08","fail":0,"id":"s1-s1","label":"RobotFrameworkPW.TestSuite1","name":"TestSuite1","pass":2,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:00:07","fail":1,"label":"All Tests","pass":0,"skip":0}],[],[{"elapsed":"00:00:11","fail":1,"id":"s1","label":"RobotFrameworkPW","name":"RobotFrameworkPW","pass":0,"skip":0},{"elapsed":"00:00:11","fail":1,"id":"s1-s1","label":"RobotFrameworkPW.mixtureSPW","name":"mixtureSPW","pass":0,"skip":0}]];
 </script>
 <script type="text/javascript">
 window.output["errors"] = [];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1725866456958;
+window.output["baseMillis"] = 1727343502185;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 8233;
+window.output["generated"] = 10952;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;

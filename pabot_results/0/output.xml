@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.5 on win32)" generated="2024-09-18T11:28:28.020261" rpa="false" schemaversion="5">
+<suite id="s1" name="mixtureSPW" source="C:\Users\netzwelt\eclipse\RobotFrameworkPW\mixtureSPW.robot">
+<test id="s1-t1" name="TestCase1" line="6">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-09-18T11:28:28.964691" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\netzwelt\\eclipse\\RobotFrameworkPW\\pabot_results\\0\\browser\\traces\\a25f7b7f-b639-49c4-b17e-eed6c4c8fb02"}</msg>
+<msg time="2024-09-18T11:28:29.227957" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\netzwelt\\eclipse\\RobotFrameworkPW\\pabot_results\\0\\browser\\traces\\a25f7b7f-b639-49c4-b17e-eed6c4c8fb02"}</msg>
+<arg>chromium</arg>
+<arg>headless=No</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-09-18T11:28:28.964691" elapsed="0.263266"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-09-18T11:28:32.850043" level="INFO">Successfully initialized new page object and opened url: http://www.google.com</msg>
+<msg time="2024-09-18T11:28:32.850043" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>http://www.google.com</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-09-18T11:28:29.227957" elapsed="3.622086"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2024-09-18T11:28:32.889053" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>1920</arg>
+<arg>1080</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2024-09-18T11:28:32.850043" elapsed="0.039010"/>
+</kw>
+<kw name="Type Text" owner="Browser">
+<msg time="2024-09-18T11:28:32.890055" level="INFO">Types the text 'robotframework with playwright' in the given field.</msg>
+<arg>[name="q"]</arg>
+<arg>robotframework with playwright</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Types the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-09-18T11:28:32.889053" elapsed="0.338185"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-18T11:28:34.228656" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-18T11:28:33.228266" elapsed="1.000390"/>
+</kw>
+<kw name="Close Page" owner="Browser">
+<msg time="2024-09-18T11:28:34.247225" level="INFO">Switching browser to CURRENT</msg>
+<msg time="2024-09-18T11:28:34.257182" level="INFO">Returned active browser id. CURRENT</msg>
+<msg time="2024-09-18T11:28:34.258179" level="INFO">Switching browser to browser=05e14a77-f9eb-42cb-8fe1-f776ba6e7742</msg>
+<msg time="2024-09-18T11:28:34.265176" level="INFO">Successfully changed active browser: browser=05e14a77-f9eb-42cb-8fe1-f776ba6e7742</msg>
+<msg time="2024-09-18T11:28:34.265176" level="INFO">Switching context to CURRENT in CURRENT</msg>
+<msg time="2024-09-18T11:28:34.270218" level="INFO">Returned active context id: CURRENT</msg>
+<msg time="2024-09-18T11:28:34.270218" level="INFO">Switching context to context=8ad59c53-af53-4a26-b4b9-6c4dc3760d21 in CURRENT</msg>
+<msg time="2024-09-18T11:28:34.279496" level="INFO">Successfully changed active context: context=8ad59c53-af53-4a26-b4b9-6c4dc3760d21</msg>
+<msg time="2024-09-18T11:28:34.296501" level="INFO">Successfully closed Page with runBeforeUnload false</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the ``page`` in ``context`` in ``browser``.</doc>
+<status status="PASS" start="2024-09-18T11:28:34.228656" elapsed="0.068846"/>
+</kw>
+<status status="PASS" start="2024-09-18T11:28:28.960660" elapsed="5.336842"/>
+</test>
+<test id="s1-t2" name="TestCase2" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-18T11:28:34.368490" level="INFO">Opening browser 'chrome' to base url 'http://www.google.com'.</msg>
+<arg>http://www.google.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-18T11:28:34.367499" elapsed="3.975615"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-18T11:28:38.343114" elapsed="0.033142"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-18T11:28:38.376256" level="INFO">Typing text 'robotframework with selenium' into text field 'name:q'.</msg>
+<arg>name:q</arg>
+<arg>robotframework with selenium</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-18T11:28:38.376256" elapsed="0.195154"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-18T11:28:39.572575" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-18T11:28:38.571410" elapsed="1.001165"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-09-18T11:28:39.573632" elapsed="2.158993"/>
+</kw>
+<status status="PASS" start="2024-09-18T11:28:34.362479" elapsed="7.370146"/>
+</test>
+<status status="PASS" start="2024-09-18T11:28:28.039283" elapsed="13.699395"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="mixtureSPW">mixtureSPW</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
