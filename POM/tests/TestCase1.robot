@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource    ../POM/Keywords1.robot
+Resource    ../pages/LoginPage.robot
 
 Suite Setup    Open my chrome browser
 Suite Teardown    SeleniumLibrary.Close Browser

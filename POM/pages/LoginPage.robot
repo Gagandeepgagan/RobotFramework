@@ -1,10 +1,10 @@
 *** Settings ***
 Library    SeleniumLibrary
-Variables    ../POM/Locators.py
+Variables    ../locators/Locators.py
 
 *** Variables ***
 ${url}    https://demo.guru99.com/test/newtours/index.php
-${browser}    headlesschrome
+${browser}    edge
 
 *** Keywords ***
 Open my chrome browser
@@ -25,7 +25,7 @@ Enter Password
 
 Click on submit button
     Click Button    ${btn_signin}
-    Sleep    5
+    Sleep    1
 
 
 Verify successful login

@@ -1,6 +1,6 @@
 *** Settings ***
 Library    SeleniumLibrary
-Variables    ../POM/Locators.py
+Variables    ../locators/Locators.py
 
 *** Variables ***
 ${url}    https://demo.guru99.com/test/newtours/register.php
